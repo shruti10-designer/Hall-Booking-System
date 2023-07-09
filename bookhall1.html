@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="bookhall.css">
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="background_video.mp4">
+    </video>
+    <section class="container">
+      <header>Hall Booking Form</header>
+     <form action="booking.php" method="post" class="form" >
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" name="fullname" required   />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter email address" name="email" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" name="phoneno" required />
+          </div>
+          <div class="input-box">
+            <label>Event Date</label>
+            <input type="datetime-local"  my-date-format="YYYY-MM-DD hh:mm:ss" placeholder="Enter event date" 
+			 name="eventdate" id="eventdate" required/>
+          </div>
+        </div>
+      
+        <div class="input-box address">
+          <label>Event Description</label>
+          <input type="text" placeholder="Enter your club name" name="clubName" required />
+          <input type="text" placeholder="Event details" name="eventDtls" required />
+          <br><br>
+          <label>Select a hall for booking</label>
+          <div class="column">
+            <div class="select-box">
+              <select name="selectedHall">
+                <option hidden>Halls</option>
+                <option>1 Amriteshwari</option>
+                <option>2 Sudhamani</option>
+                <option>3 Vyasa</option>
+                <option>4 Valmiki</option>
+				<option>5 Rama</option>
+				<option>6 Krishna</option>
+              </select>
+            </div>
+          
+          </div>
+          
+        </div>
+        <button>Book</button>
+      </form>
+    </section>
+	
+	
+  </body>
+</html>

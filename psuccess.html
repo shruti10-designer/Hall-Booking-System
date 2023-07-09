@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmation Page</title>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+
+background: url("images/banner.jpg") no-repeat center;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+
+h1 {
+     margin: 10px;
+	 margin-top: 100px;
+     padding: 50px;
+     box-sizing: border-box;
+	 color: crimson;
+     text-decoration: none;
+	 font-family: 'Ubuntu' , sans-serif;
+	 font-size: 80px;
+	 text-align: center;
+}
+
+.b20 {
+text-align: center;}
+
+.btn {
+  border: none;
+  background-color: crimson;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 200px 0;
+  width: 10%;
+}
+
+.btn:hover {background: darkblue;}
+
+.back {color: white;
+font-family: 'Ubuntu', sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="background_video2.mp4">
+  </video>
+
+<h1>Booking Successful!</h1>
+
+<div class="b20">
+	<button onclick="location.href='index.html'" class="btn back">Back</button>
+</div>
+
+</body>
+</html>
